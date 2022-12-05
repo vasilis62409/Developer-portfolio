@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Skabillys | Web Developer</title>
+  </head>
+
+  <!-- navbar -->
+
+  <body>
+    <nav>
+
+    	<h1>SKABILLYS</h1>
+    	<ul class="navigation">
+
+    		<li><a href="#about" class="nav-link">About</a></li>
+    		<li><a href="#skills" class="nav-link">Skills</a></li>
+    		<li><a href="#projects" class="nav-link">Projects</a></li>
+    		<li><a href="#contact" class="nav-link">Contact</a></li>
+    	</ul>
+    	<button class="burger-menu" id="burger-menu".name>
+    		<ion-icon class="bars" name="menu-outline"></ion-icon>
+    	</button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+      <img 
+        src="assets/image/Programming-amico.png"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"/>
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            I am a passionate developer with a focus in machine learning and systems development.
+            Recently I developed a new enthusiasm for web development and all the systems behind it. I think I'll stick around.
+          </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        I have studied math, which i have loved since precalc in high school. But then i found a new purpose in life, proggramming. In my university I had the choice of focusing in computer science and the math that comes along with it. That made me reconsider my career choices
+      </p>
+      <p>
+        First thing that peaked my interest was AI and machine learning. This is what really got me into coding. I have spend a lot of my free time around datasets in kaggle.com, creating my own datasets and trying to make useful systems such as face recognition, handwritten text recognition and conversation making bots. Given my strong mathematical background and heavy reliance of these systems on statistics, that was an easy start
+      </p>
+      <p>
+        After that I branched out to c++ and rust development, expecting to make better AI systems. That proved to be a real challenge that my math background didn't seem to help at all. However, I have made some interesting projects, a highlight of which is an old-school rogue-like dungeon crawler with text graphics, paying to tribute to the old pc-game Rogue. I intend to keep working on my skills with those and maybe get a job on the field.
+      </p>
+      <p>
+        My latest adventures have been around web development and javascript. Granted this space isn't as challenging as systems dev and probably a way more ambiguous career path, considering all my other skills, however i like the artistic and creative side of things. Who knows? Maybe if i give it a chance i'll like it even more.
+    </section>
+
+    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img 
+            src="assets/icons/icons8-c-plus-plus-96.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          <img 
+            src="assets/icons/icons8-python-96.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          <img 
+            src="assets/icons/icons8-rust-is-a-multi-paradigm-system-programming-language-100.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          <img 
+            src="assets/icons/icons8-css-filetype-96.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          <img 
+            src="assets/icons/icons8-html-96.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          <img 
+            src="assets/icons/icons8-js-96.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-guard"/>
+
+          </div>
+        </div>
+      </section>
+
+          
+    </section>
+
+    <!-- Projects section -->
+
+    <section class="projects" id="projects">
+      <h2 class ="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+
+        <!-- bitcoin -->
+
+        <div class="project-container project-card">
+          <img 
+          src="assets/image/btc.png"
+          width ="354.48"
+          height = "187.64"
+          alt = "bitcoin prices research"
+          loading = "lazy"
+          class = "project-pic"
+          />
+          <h3 class="project-title">Bitcon Price Research</h3>
+          <p class="project-details">
+            This is my attempt at asserting if it was a good decision to get in and gamble on bitcoin a bit. I used beautiful soup in python to scrape the data from "site".
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it out</a>
+        </div>
+
+        <!-- rusty -->
+
+        <div class="project-container project-card">
+          <img 
+          src="assets/image/rusty-caverns.png"
+          alt="rusty-caverns"
+          loading="lazy"
+          class="project-pic"
+          />
+          <h3 class="project-title">Rusty Caverns</h3>
+          <p class="project-details">
+            Work in progress project. A rogue-like dungeon-crawler written entirely in rust.
+            The idea came from a rust tutorial book written by Herbert Wolverson, with my litle twists of course.
+          </p>
+          <a href="https://github.com/vasilis62409/rusty_caverns" target="_blank" class="project-link">Check it Out</a>
+        </div>
+
+        <!-- netflix -->
+
+        <div class="project-container project-card">
+          <img 
+          src="assets/image/netflix-clone.png"
+          alt="Netflix clone"
+          loading = "lazy"
+          class = "project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Everyone has made one of those. I had to make one too. A little detail I have 
+            added is the clips from youtube, such as trailers etc.
+          </p>
+          <a href="https://github.com/vasilis62409/netflixclone" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact section. I'll be back... -->
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+      <a href="https://www.facebook.com/billys.moustakas/" target="_bank">
+        <img 
+        src="assets/icons/icons8-facebook.svg"
+        alt="facebook"
+        loading="lazy"
+        class="socicon"/>
+      </a>
+      <a href="https://github.com/vasilis62409" target="_blank">
+        <img 
+        src="assets/icons/icons8-github-90.png"
+        alt="github"
+        loading="lazy"
+        class="socicon"/>
+      </a>
+      <a href="https://www.linkedin.com/in/vasilis-moustakas-906011190/" target="_blank">
+        <img 
+        src="assets/icons/icons8-linkedin-circled-90.png"
+        alt="linkedin"
+        loading="lazy"
+        class="socicon"/>
+      </a>
+
+    <!-- Scroll to top -->
+
+    <i class="scroll-up" id="scroll-up">
+      <img 
+      src="assets/icons/icons8-up-90.png"
+      class="socicon up-arrow"
+      alt="scroll-up"
+      />
+
+    <!-- Footer section -->
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+

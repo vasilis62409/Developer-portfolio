@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+
+/* Variables */
+:root {
+	--font-family:  monospace, sans-serf;
+	--normal-font: 400;
+	--bold-font: 700;
+	--bolder-font: 900;
+	--bg-color: #512BA9;
+	--sbg-color: #1C2272;
+	--primary-color: #AAAAAB;
+	--secondary-color: #858589;
+	--third-color: #1BC7FB;
+	--primary-shadow: #180B91;
+	--secondary-shadow: #a17a69;
+	--bottom-margin: 0.5rem;
+	--bottom-margin-2: 1rem;
+	--line-height: 1.7rem;
+	--transition: 0.3s;
+}
+/* Variables end */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: var(--third-color);
+}
+
+a:hover {
+	color: var(--secondary-color);
+}
+
+body {
+	font-family: var(--font-family);
+	background-color: var(--bg-color);
+
+}
+
+nav {
+	position: sticky; /* this along with 'z-index: 1' make the navbar sticky */
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 3.5rem;
+	background-color: var(--sbg-color);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+	color: var(--third-color);
+}
+
+nav a {
+	color: var(--third-color);
+	transition: var(--transition);
+}
+
+nav a:hover {
+	color: var(--secondary-color);
+	border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+	display: flex;
+	gap: 1.9rem;
+}
+
+nav ul li {
+	font-weight: var(--bold-font);
+}
+
+.burger-menu {
+	color: var(--primary-color);
+	font-size: 2rem;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem;
+	max-width: 68.75rem;
+	margin: auto;
+}
+
+.hero img {
+	height: 37.5rem;
+	width: 37.5rem;
+}
+
+.bio {
+	width: 25rem;
+	padding: 0.625rem;
+	border-radius: 6px;
+	box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+	background-color: var(--sbg-color);
+	color: var(--primary-color);
+}
+
+.bio h1 {
+	margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+	line-height: var(--line-height);
+	padding: 0.6rem 0;
+}
+
+.more-about {
+	background-color: var(--bg-color);
+	padding: 1rem 6rem;
+	color: var(--primary-color);
+}
+
+.more-about h2 {
+	margin-bottom: var(--bottom-margin);
+	text-align: center;
+	color: var(--secondary-color);
+}
+
+.more-about {
+	line-height: var(--line-height);
+	padding: 10rem;
+}
+
+.more-about p {
+	padding: 0.3rem;
+}
+
+.skills {
+	max-width: 58.75rem;
+	margin: auto;
+	text-align: center;
+	margin-top: 2.5rem;
+}
+
+.skill-header {
+	margin-bottom: 1rem;
+	color: var(--primary-color);
+}
+
+.skills-wrapper img {
+	padding: 1.25rem;
+}
+
+.icon {
+	width: 11.875rem;
+	height: 11.25rem;
+}
+
+.icon-guard {
+	background-color: #fff;
+	border-radius: 11px;
+	box-shadow: 0 3px 10px var(--primary-shadow);
+	padding: 20px;
+	margin: 10px;
+	background-color: var(--sbg-color);
+}
+
+.projects {
+	background-color: var(--bg-color);
+	padding: 32px 0;
+	margin-top: 2rem;
+}
+
+.project-pic {
+	width: 65%;
+	height: 60%;
+}
+
+.projects-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.projects-title {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: var(--primary-color);
+}
+
+.project-container {
+	text-align: center;
+	width: 21.875rem;
+	padding: 1rem;
+}
+
+.project-container p {
+	padding: 0.4rem;
+}
+
+.project-title {
+	margin-bottom: var(--bottom-margin);
+	color: var(--secondary-color);
+}
+
+.project-details {
+	margin-bottom: var(--bottom-margin);
+	color: var(--primary-color);
+}
+
+.project-card {
+	background-color: var(--sbg-color);
+	border-radius: 11px;
+	box-shadow: 0 3px 10px var(--primary-shadow);
+	padding: 20px;
+	margin: 10px;
+
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 1%;
+	bottom: 50%;
+}
+
+.socicon {
+	width: 2rem;
+	height: 2rem;
+}
+
+.scroll-up {
+	position: fixed;
+	right: 0.5%;
+	bottom: 3%;
+	cursor: pointer;
+}
+
+.up-arrow {
+	width: 3rem;
+	height: 3rem;
+}
+
+@media screen and (max-width: 720px) {
+	/*changes reflects on screen with a width of 720px and below*/
+}
+
